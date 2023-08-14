@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 7</title>
+    <style>
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+        }
+
+        fieldset label {
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form>
+        <fieldset class="form">
+            <legend>Dados pessois</legend>
+            <label>
+                Nome:
+                <input type="text">
+            </label>
+            <label>
+                Endereço:
+                <input type="text">
+            </label>
+            <label>
+                Cidade:
+                <input type="text">
+            </label>
+            <label>
+                Estado:
+                <select id="minhaSelecao" name="minhaSelecao">
+                    <option value="1">São Paulo</option>
+                    <option value="2">Santa Catarina</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Dados profissionais</legend>
+            <label>
+                Natureza do Cargo
+                <br>
+                <input type="radio" name="opcao" value="Gêrencia"> Gerêrencia
+                <input type="radio" name="opcao" value="Finênceiro"> Gerêrencia
+                <input type="radio" name="opcao" value="Recepção"> Gerêrencia
+                <input type="radio" name="opcao" value="Administrativo"> Gerêrencia
+                <input type="radio" name="opcao" value="Jurídico"> Gerêrencia
+            </label>
+            <label>
+                Área de interesse
+                <br>
+                <input type="checkbox" name="opcao" value="Computação"> Computação
+                <input type="checkbox" name="opcao" value="Biologia"> Biologia
+                <input type="checkbox" name="opcao" value="Meio Ambiente"> Meio Ambiente
+                <input type="checkbox" name="opcao" value="Engenharia"> Engenharia
+                <input type="checkbox" name="opcao" value="História"> História
+            </label>
+            <label>
+                Mini-currículo
+                <textarea name="text" cols="30" rows="10"></textarea>
+            </label>
+        </fieldset>
+    </form>
+</body>
+</html>
